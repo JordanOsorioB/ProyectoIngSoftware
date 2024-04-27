@@ -1,7 +1,3 @@
-/* Establecer el color de fondo de la página */
-body {
-    background-color: #5d7cbe; /* Un tono de azul oscuro */
-}
 
 /* Bloque inicial para el fondo y tamaño de fuente */
 .navbar {
@@ -12,23 +8,19 @@ body {
     font-size: 25px; /* Tamaño de fuente más grande */
     width: 100%; /* Asegura que la navbar ocupe todo el ancho */
 }
-
 .container-fluid {
     display: flex;
     justify-content: space-between; /* Distribuye los elementos uniformemente a lo largo de la barra */
     align-items: center; /* Centra los elementos verticalmente */
     width: 100%;
 }
-
 .navbar-brand, .navbar-collapse {
     flex-grow: 1; /* Permite que el logo y los elementos de navegación crezcan y se distribuyan equitativamente */
 }
-
 .navbar-nav {
     justify-content: center;
     width: 100%;
 }
-
 .navbar-nav .nav-link {
     transition: background-color 0.4s, color 0.4s; /* Suaviza la transición de color */
     margin: 10px 15px; /* Espaciado */
@@ -37,19 +29,16 @@ body {
     color: rgb(255, 255, 255); /* Blanco para mayor legibilidad */
     font-size: 25px; /* Tamaño inicial de la fuente */
 }
-
 .navbar-nav .nav-link:hover {
     background-color:#5d7cbe; /* Gris oscuro para contraste */
-    font-size: 23px; /* Tamaño de fuente aumentado al pasar el mouse */
+    font-size: 25px; /* Tamaño de fuente aumentado al pasar el mouse */
 }
-
 /* Personalizar la marca del sitio */
 .navbar-brand {
     color: rgb(255, 255, 255) !important; /* Negro para destacar */
     justify-content: center; /* Centra el logo dentro de su contenedor */
     text-align: center; /* Asegura que el texto dentro del logo también esté centrado */
 }
-
 @media (max-width: 991px) {
     .navbar-collapse {
         justify-content: center; /* Asegura que los enlaces se centren en vistas móviles */
@@ -59,12 +48,18 @@ body {
 .navbar-brand {
     display: flex; /* Alinea imagen y texto horizontalmente */
     align-items: center; /* Centra verticalmente la imagen y el texto */
-    text-decoration: none; /* Elimina subrayado del texto */
     font-size: 35px; /* Tamaño de fuente para el texto */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Tipo de fuente moderna y legible */
     font-weight: bold; /* Texto en negrita */
 }
-
 .navbar-brand img {
     margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+.footer{
+    margin-top:auto;
+    color: white;
+    background-color: #333;
+    text-align: center;
+    padding: 5px;
+    font-size: 16px;
 }
