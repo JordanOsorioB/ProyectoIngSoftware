@@ -1,65 +1,128 @@
-
-/* Bloque inicial para el fondo y tamaño de fuente */
+html, body {
+    height: 100%; 
+    margin: 0; 
+    display: flex;
+    flex-direction: column; 
+}
+body > .container {
+    flex: 1; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+}
 .navbar {
     display: flex;
-    justify-content: center; /* Alinea horizontalmente al centro */
-    align-items: center; /* Alinea verticalmente al centro */
-    background-color: #32288d !important; /* Azul oscuro */
-    font-size: 25px; /* Tamaño de fuente más grande */
-    width: 100%; /* Asegura que la navbar ocupe todo el ancho */
-}
-.container-fluid {
-    display: flex;
-    justify-content: space-between; /* Distribuye los elementos uniformemente a lo largo de la barra */
-    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: center;
+    align-items: center;
+    background-color: #32288d !important;
+    font-size: 25px;
     width: 100%;
 }
-.navbar-brand, .navbar-collapse {
-    flex-grow: 1; /* Permite que el logo y los elementos de navegación crezcan y se distribuyan equitativamente */
+
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
+
+.navbar-brand, .navbar-collapse {
+    flex-grow: 1;
+}
+
 .navbar-nav {
     justify-content: center;
     width: 100%;
 }
+
 .navbar-nav .nav-link {
-    transition: background-color 0.4s, color 0.4s; /* Suaviza la transición de color */
-    margin: 10px 15px; /* Espaciado */
-    border-radius: 50px; /* Bordes redondeados */
+    transition: background-color 0.4s, color 0.4s;
+    margin: 10px 15px;
+    border-radius: 50px;
     text-align: center;
-    color: rgb(255, 255, 255); /* Blanco para mayor legibilidad */
-    font-size: 25px; /* Tamaño inicial de la fuente */
+    color: rgb(255, 255, 255);
+    font-size: 25px;
 }
+
 .navbar-nav .nav-link:hover {
-    background-color:#5d7cbe; /* Gris oscuro para contraste */
-    font-size: 25px; /* Tamaño de fuente aumentado al pasar el mouse */
+    background-color: #5d7cbe;
 }
-/* Personalizar la marca del sitio */
+
 .navbar-brand {
-    color: rgb(255, 255, 255) !important; /* Negro para destacar */
-    justify-content: center; /* Centra el logo dentro de su contenedor */
-    text-align: center; /* Asegura que el texto dentro del logo también esté centrado */
+    color: rgb(255, 255, 255) !important;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
 }
-@media (max-width: 991px) {
-    .navbar-collapse {
-        justify-content: center; /* Asegura que los enlaces se centren en vistas móviles */
-    }
-}
-/* Personalizar la marca del sitio con imagen y texto */
-.navbar-brand {
-    display: flex; /* Alinea imagen y texto horizontalmente */
-    align-items: center; /* Centra verticalmente la imagen y el texto */
-    font-size: 35px; /* Tamaño de fuente para el texto */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Tipo de fuente moderna y legible */
-    font-weight: bold; /* Texto en negrita */
-}
+
 .navbar-brand img {
-    margin-right: 20px; /* Espacio entre la imagen y el texto */
+    margin-right: 20px;
 }
-.footer{
-    margin-top:auto;
+
+.footer {
     color: white;
     background-color: #333;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
     font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.contact-info p, .contact-info ul, .social-media a {
+    margin: 0;
+    padding: 5px;
+}
+
+.contact-info ul {
+    list-style: none;
+}
+
+.contact-info ul li {
+    padding: 3px 0;
+}
+
+.social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    width: 80%;
+    border: none;
+    height: 1px;
+    background-color: #666;
+    margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info, .social-media {
+        text-align: center;
+        margin-bottom: 10px;
+    }
 }

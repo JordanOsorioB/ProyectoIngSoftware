@@ -10,7 +10,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="../index.html">
                 <img src="../../contenedor/logo.png" alt="Logo de Mi Sitio" style="height: 40px;">
                 Veranum
             </a>
@@ -20,16 +20,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="/view/index.html">Inicio</a>
+                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/view/servicios/index.html">Servicios</a>
+                        <a class="nav-link" href="../servicios/index.html">Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/view/sobreNosotros.html">Sobre Nosotros</a>
+                        <a class="nav-link" href="../sobreNosotros.html">Sobre Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/view/contacto.html">Contacto</a>
+                        <a class="nav-link" href="../contacto.html">Contacto</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="login.html">Registrarse</a>
@@ -40,45 +40,57 @@
     </nav>
     <br><br>
 
-    <form class="row g-3" style="margin: 0 60px;">
-        <div class="cold-md-4">
-            <div class="col-md-4">
-                <label for="validationDefault01" class="form-label">Crear usuario *</label>
-                <input type="text" class="form-control" id="validationDefault01" placeholder="Ingrese nombre usuario" required>
-              </div>
+    <div class="container pt-4 pb-4">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6"> 
+                <form class="row g-3" action="loginConfirmado.html" method="POST" style="margin: 0 auto; max-width: 500px;">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Crear usuario *</label>
+                        <input type="text" class="form-control" id="username" placeholder="Ingrese nombre de usuario" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo *</label>
+                        <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Clave *</label>
+                        <input type="password" class="form-control" id="password" placeholder="Ingrese su clave" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="confirm-password" class="form-label">Confirmar Clave *</label>
+                        <input type="password" class="form-control" id="confirm-password" placeholder="Confirme su clave" required>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-primary" type="submit">Registrarse</button>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="cold-md-4">
-            <div class="col-md-4">
-                <label for="validationDefault01" class="form-label">Correo *</label>
-                <input type="text" class="form-control" id="validationDefault01" placeholder="" required>
-              </div>
-        </div>
-        <div class="cold-md-4">
-            <div class="col-md-4">
-                <label for="validationDefault01" class="form-label">Clave *</label>
-                <input type="text" class="form-control" id="validationDefault01" placeholder="Escriba aqui su nombre..." required>
-              </div>
-        </div>
-        <div class="cold-md-4">
-            <div class="col-md-4">
-                <label for="validationDefault01" class="form-label">Confirmar Clave *</label>
-                <input type="text" class="form-control" id="validationDefault01" placeholder="Escriba aqui su nombre..." required>
-              </div>
-        </div>
-        <div class="col-6">
-            <button class="btn btn-primary" type="submit">Registrarse  </button>
-        </div>
-
-        
-    </form>
-    <br><br><br>
-    <div class="col-6" style="margin: 0 50px;">
-        <button  type="submit"><a href="registrarse.html">Ingresar</a>  </button>
     </div>
 
 
 
-    <footer class ="footer"> <p>©2024 Jordania. Todos los derechos reservados. </p> </footer>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="contact-info">
+                <p>Contacto:</p>
+                <ul>
+                    <li>Teléfono: +569 9955 3311</li>
+                    <li>Email: contacto.veranum@veranum.cl</li>
+                </ul>
+            </div>
+            <div class="social-media">
+                 <p>Visita nuestras redes:</p>
+                <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                <a href="https://www.twitter.com" target="_blank">Twitter</a>
+                <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            </div>
+        </div>
+        <hr> 
+        <div class="copyright">
+            <p>Copyright © 2024 Jordania. Todos los derechos reservados.</p>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
