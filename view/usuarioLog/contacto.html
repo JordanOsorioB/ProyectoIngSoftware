@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veranum</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="principal.css">
+    <link rel="stylesheet" href="contacto.html">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="../contenedor/logo.png" alt="Logo de Mi Sitio" style="height: 40px;">
+                Veranum
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios/index.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobreNosotros.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Login/login.html">Iniciar sesión</a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br><br>
+    <h1 style = "margin: 0 50px"s>Contáctanos</h1><br>s
+    <h6 style = "margin: 0 54px">Si tiene alguna consulta o incoveniente con su reserva u otra cuestión, rellene el formulairo y nos pondremos en contacto con usted.</h6>
+
+    <br><br>
+    <form class="row g-3 " style="margin: 0 55px;">
+        <div class="col-md-4">
+          <label for="validationDefault01" class="form-label">Nombres *</label>
+          <input type="text" class="form-control" id="validationDefault01" placeholder="Escriba aqui sus nombres..." required>
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefault02" class="form-label">Apellidos *</label>
+          <input type="text" class="form-control" id="validationDefault02" placeholder="Escriba aqui sus apellidos..." required>
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefault02" class="form-label">Telefono *</label>
+          <div class="input-group">
+            <span class="input-group-text" id="inputGroupPrepend2">+56</span>
+            <input type="number" class="form-control" id="validationDefaultUsername" placeholder="Escriba aqui su numero"  aria-describedby="inputGroupPrepend2" required>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefault03" class="form-label">Correo *</label>
+          <input type="email" class="form-control" id="validationDefault03" required>
+        </div>
+        <div class="col-md-4">
+            <label for="validationDefault03" class="form-label">Fecha Nacimiento</label>
+            <input type="date" class="form-control" id="validationDefault03" >
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefault04" class="form-label">Comuna *</label>
+          <select class="form-select" id="validationDefault04" required>
+            <option selected disabled value="">Seleccionar</option>
+
+            <option>Cerrillos</option>
+            <option>Cerro Navia</option>
+            <option>Colina</option>
+            <option>Conchalí</option>
+            <option>Curacaví</option>
+            <option>El Bosque</option>
+            <option>El Monte</option>
+            <option>Estación Central</option>
+            <option>Huechuraba</option>
+            <option>Independencia</option>
+            <option>Isla de Maipo</option>
+            <option>La Cisterna</option>
+            <option>La Florida</option>
+            <option>La Granja</option>
+            <option>La Pintana</option>
+            <option>La Reina</option>
+            <option>Lampa</option>
+            <option>Las Condes</option>
+            <option>Lo Barnechea</option>
+            <option>Lo Espejo</option>
+            <option>Lo Prado</option>
+            <option>Macul</option>
+            <option>Maipú</option>
+            <option>María Pinto</option>
+            <option>Melipilla</option>
+            <option>Ñuñoa</option>
+            <option>Padre Hurtado</option>
+            <option>Paine</option>
+            <option>Pedro Aguirre Cerda</option>
+            <option>Peñaflor</option>
+            <option>Peñalolén</option>
+            <option>Pirque</option>
+            <option>Providencia</option>
+            <option>Puente Alto</option>
+            <option>Pudahuel</option>
+            <option>Quilicura</option>
+            <option>Quinta Normal</option>
+            <option>Recoleta</option>
+            <option>Renca</option>
+            <option>San Bernardo</option>
+            <option>San Joaquín</option>
+            <option>San José de Maipo</option>
+            <option>San Miguel</option>
+            <option>San Pedro</option>
+            <option>San Ramón</option>
+            <option>Santiago</option>
+            <option>Talagante</option>
+            <option>Tiltil</option>
+            <option>Vitacura</option>
+
+          </select>
+        </div>
+
+        <div class="col-md-6">
+            <label for="validationDefault03" class="form-label">Comentario</label>
+            <br>
+            <textarea name="asd" id="" cols="50" rows="3" required placeholder="Escriba sus dudas y comentarios aquí."></textarea>
+        </div>
+        <div class="col-8">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2">
+            <label class="form-check-label" for="invalidCheck2">
+              Acepta recibir ofertas y promociones.
+            </label>
+          </div>
+        </div>
+        <div class="col-6">
+          <button class="btn btn-primary" type="submit">Enviar  </button>
+        </div>
+      </form>
+
+      <br><br><br><br>
+      <footer class="footer">
+        <div class="footer-content">
+            <div class="contact-info">
+                <p>Contacto:</p>
+                <ul>
+                    <li>Teléfono: +569 9955 3311</li>
+                    <li>Email: contacto.veranum@veranum.cl</li>
+                </ul>
+            </div>
+            <div class="social-media">
+                 <p>Visita nuestras redes:</p>
+                <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                <a href="https://www.twitter.com" target="_blank">Twitter</a>
+                <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            </div>
+        </div>
+        <hr> 
+        <div class="copyright">
+            <p>Copyright © 2024 Jordania. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
